@@ -1,0 +1,10 @@
+$string = "Hello World";
+$string = str_split($string);
+function changeCase($value){
+    if(ctype_upper($value)){
+        echo strtolower($value);
+    }else{
+        echo strtoupper($value);
+    }
+}
+array_walk($string, "changeCase");
