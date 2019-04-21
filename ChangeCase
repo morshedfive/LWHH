@@ -1,3 +1,18 @@
+function changeCase($string){
+    $string = str_split($string);
+    for ($i = 0; $i < count($string); $i++) {
+        if(ctype_upper($string[$i])){
+            echo strtolower($string[$i]);
+        }else{
+            echo strtoupper($string[$i]);
+        }
+    }
+}
+changeCase("hello World");
+
+
+OR
+
 $string = "Hello World";
 $string = str_split($string);
 function changeCase($value){
